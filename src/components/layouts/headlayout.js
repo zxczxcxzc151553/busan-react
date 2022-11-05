@@ -1,13 +1,13 @@
-import Header from "components/commons/header";
+import Header from "components/commons/Header";
 import React from "react";
 
-const headlayout = ({children}) => {
+const HeadLayout = ({ children }) => {
   return (
     <div>
-        <Header />
-        {children}
+      <Header />
+      {children}
     </div>
   );
 };
 
-export default headlayout;
+export default HeadLayout;

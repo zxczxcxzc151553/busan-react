@@ -1,16 +1,17 @@
-import React from 'react'
+import HeadLayout from "components/layouts/HeadLayout";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
-    const navigate = useNavigate();
-  return (
-    <div>
-<headlayout>
-<div>Main</div>
-    <button onClick={() => navigate("/counter")}>메인으로이동</button>
+  const navigate = useNavigate();
 
-</headlayout>
-</div>
+  return (
+    <HeadLayout>
+      <div>
+        <div>메인페이지</div>
+        <button onClick={() => navigate("/counter")}>카운터로 이동</button>
+      </div>
+    </HeadLayout>
   );
 };
 
